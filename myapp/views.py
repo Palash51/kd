@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import requests
 
 
-def index(request):
-	return HttpResponse("<h1>Hello world! it's  my first live website. Palash</h1>")
+def home(request):
+	context = {'list': "list"}
+	return render(request, 'index.html', context)
