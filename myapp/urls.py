@@ -9,4 +9,9 @@ urlpatterns = [
 	
     #url(r'^find/$',views.use_api, name="search"),
     url(r'^$', views.home, name = "homepage"),
+    url(r'^cotton/$', views.cotton, name = "cotton"),
+    url(r'^contact/$', views.contact, name = "contact"),
+    url(r'^about/$', views.about, name = "about"),
+    url(r'^registration/$', views.registration, name = "registration"),
+
 ]

@@ -24,7 +24,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style>
+body {
+    background-color:#C70039;
+}</style>
 </head>
 
 <body>
@@ -46,13 +49,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="{% url 'about' %}">About Us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{% url 'contact' %}">Contact Us</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Log In/Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +86,7 @@
             </div>
 
             <div class="col-sm-3 col-md-6 col-lg-4">
-                <a class="thumbnail" href="#">
+                <a class="thumbnail" href="{% url 'cotton' %}">
                     <img class="img-responsive" src="{% static '/img/Cotton.jpg' %}" alt="">
                 </a>
             </div>
