@@ -4,8 +4,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.conf import settings
 from django.http import HttpResponse,HttpResponseRedirect
-import requests
-import json
+#import requests
+#import json
 from myapp.forms import LoginForm
 from myapp.models import Crop_details
 
