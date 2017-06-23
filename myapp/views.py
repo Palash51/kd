@@ -9,7 +9,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from myapp.forms import LoginForm
 from myapp.models import Crop_details
 
-
+#heroku git:remote -a cropdata
 def home(request):
 	context = {'list': "list"}
 	return render(request, 'index.html', context)
