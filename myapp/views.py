@@ -53,22 +53,3 @@ def registration(request):
 	return render(request, 'registration.html',context)
 
 
-# def reg(request):
-# 	form = LoginForm() 
-# 	if request.method == 'POST':
-# 		form = LoginForm(request.POST)
-# 		if form.is_valid():
-# 			username = request.POST.get('username', '')
-# 			email = request.POST.get('email', '')
-# 			password = request.POST.get('password', '')
-# 			cnfm_pass = request.POST.get('cnfm_pass', '')
-# 			register_user_obj = register_user(username=username,email=email,password=password,cnfm_pass=cnfm_pass)
-# 			register_user_obj.save()
-
-# 			return HttpResponseRedirect('/')
-
-# 		else:
-# 			return HttpResponseRedirect('index.html')
-# 			#form = LoginForm()
-
-# 	return render(request, 'cotton.html', { 'form': form ,})
